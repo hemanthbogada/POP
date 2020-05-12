@@ -1,0 +1,38 @@
+<div class="redirect-request-container" fxLayout="column" fxLayoutGap="20px">
+    <div class="redirect-request-header">
+        <header class="headedr-section">
+            <div class="main-heading">
+                <h3>{{mainHeaderLabel}}</h3>
+            </div>
+            <div class="sub-level-heading">{{subHeaderLabel}}</div>
+        </header>
+    </div>
+    <div class="redirect-request-content" fxLayout="column">
+        <div class="redirect-request-details" fxLayout="column" fxLayoutGap="15px">
+            <div class="form-field" fxLayout="row" fxLayoutAlign=" center">
+                <label fxFlex="31">Action Type</label>
+                <p-dropdown class="action-type-dropdown-cls" [options]="cities" [(ngModel)]="selectedCity"
+                    placeholder="Select a City" optionLabel="name" [showClear]="true"></p-dropdown>
+            </div>
+            <div class="form-field" fxLayout="row" fxLayoutAlign=" center">
+                <label fxFlex="32">Source Url</label>
+                <input id="input" type="text" size="30" pInputText [(ngModel)]="text">
+            </div>
+            <div class="form-field" fxLayout="row" fxLayoutAlign=" center">
+                <label fxFlex="32">Destination Url</label>
+                <input id="input" type="text" size="30" pInputText [(ngModel)]="text">
+            </div>
+            <div>
+                <button pButton type="button" label="Save"></button>
+            </div>
+        </div>
+        <div class="redirect-request-table" >
+            <app-redirect-request-table></app-redirect-request-table>
+        </div>
+    </div>
+    <div class="redirect-request-footer">
+        <footer fxLayout="row" fxLayoutAlign="end center">
+            <button pButton type="button" label="Submit Request"></button>
+        </footer>
+    </div>
+</div>

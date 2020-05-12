@@ -1,0 +1,32 @@
+<div class="request-details-container">
+    <div class="request-details-header">
+        <h3>{{detailsHeaderLabel}}:</h3>
+    </div>
+    <div class="request-details-content">
+        <div class="request-details" fxLayout="column" fxLayoutGap="15px">
+            <div class="group1" fxLayout="row">
+                <div fxFlex>
+                    <label>Request Id</label>
+                    <span></span>
+                </div>
+                <div fxFlex>
+                    <label>Request Name</label>
+                    <span></span>
+                </div>
+            </div>
+            <div class="group2" fxLayout="row">
+                <div fxFlex>
+                    <label>Submitter Name</label>
+                    <span></span>
+                </div>
+                <div fxFlex>
+                    <label>Status</label>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+        <div class="request-details-table">
+            <app-request-details-table></app-request-details-table>
+        </div>
+    </div>
+</div>

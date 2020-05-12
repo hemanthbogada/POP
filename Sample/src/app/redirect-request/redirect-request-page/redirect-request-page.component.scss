@@ -1,0 +1,34 @@
+.redirect-request-container {
+  height: calc(100vh - 16px);
+  width: 100%;
+  overflow: hidden;
+  .sub-level-heading {
+    padding: 15px 0px;
+    text-align: center;
+    border: 1px solid lightgray;
+  }
+  .redirect-request-details {
+    padding: 10px 20px;
+    border: 1px solid lightgray;
+    margin-bottom: 10px;
+    .form-field {
+      width: 380px;
+      .action-type-dropdown-cls {
+        width: 100%;
+        padding: 1px 0px;
+        .ui-dropdown {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .redirect-request-content{
+      height: calc(100% - 184px);
+  }
+  .redirect-request-table {
+    height: calc(100% - 210px);
+  }
+  .redirect-request-footer{
+    //   padding:10px;
+  }
+}
